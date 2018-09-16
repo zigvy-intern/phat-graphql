@@ -1,0 +1,270 @@
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+html,
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #666666;
+}
+
+body {
+    margin: 0;
+    padding: 0
+}
+
+main {
+    padding: 0 10%
+}
+
+footer {
+    color: #333333;
+    background-color: #eeeeee;
+    text-align: center;
+    padding: 1% 0
+}
+
+h2 {
+    font-size: 1.5em;
+    font-weight: 300;
+    padding-bottom: 2%
+}
+
+ul {
+    padding: 0 0 25px 0
+}
+
+ul p {
+    font-size: 1em;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-align: left;
+    color: #333333;
+    line-height: 0;
+}
+
+li {
+    list-style-type: none;
+    color: #e535ab;
+}
+
+img {
+    border-radius: 10px 10px 0 0;
+}
+
+#hero-section {
+    padding: 60px 0 0 0
+}
+
+#banner {
+    padding: 0 10%;
+    position: relative;
+    background: url("../img/bg.png") no-repeat center center fixed;
+    height: 487px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.nav {
+    display: flex;
+    padding-top: 50px;
+}
+
+.pitch {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.pitch h1 {
+    font-weight: 300;
+    font-size: 2.5em;
+}
+
+.pitch h4 {
+    margin-top: -1.5em;
+    font-weight: 300;
+    font-size: 1.1em;
+}
+
+#btn-nav {
+    margin: 0 0 0 auto;
+    background-color: transparent;
+    color: white;
+    width: 15em;
+    height: 2.2em;
+    border: solid 1px #ffffff;
+    border-radius: 20px;
+}
+
+#btn-nav:hover {
+    background-color: white;
+    color: black;
+}
+
+#btn-pitch {
+    font-family: 'Source Code Pro', monospace;
+    font-weight: bold;
+    font-size: 0.8em;
+    border: 0px;
+    width: 15em;
+    height: 4em;
+    background-color: #e535ab;
+    border-radius: 4px;
+    letter-spacing: 3px;
+    color: #ffffff
+}
+
+#hero-section h1 {
+    font-weight: 300;
+    font-size: 3em;
+    color: #e535ab;
+    line-height: 0;
+}
+
+.twocl {
+    -webkit-columns: 2 500px;
+    -moz-columns: 2 500px;
+    columns: 2 500px;
+    -webkit-column-gap: 4em;
+    -moz-column-gap: 4em;
+    column-gap: 4em;
+    font-size: 1em
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap
+}
+
+.card {
+    padding-bottom: 5%;
+    width: 50%;
+    min-width: min-content;
+}
+
+.card img {
+    width: auto;
+    height: 50px;
+}
+
+.card a {
+    color: #e535ab;
+}
+
+.card p {
+    padding-right: 100px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+#contact {
+    display: flex;
+    justify-content: center;
+    border-top: 3px solid #eeeeee;
+    border-bottom: 3px solid #eeeeee
+}
+
+#avatar {
+    background-color: black;
+    width: 3%;
+    height: 3%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 1% 1% 0 0
+}
+
+#content {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#post-content {
+    display: flex;
+    flex-flow: row wrap;
+    padding-right: 10%;
+}
+
+#content article {
+    flex: 7;
+    padding-bottom: 3%;
+}
+
+#content aside {
+    flex: 3;
+}
+
+.card-block img {
+    width: 100%;
+    height: auto;
+}
+
+.post-user {
+    flex: 1;
+    line-height: 0;
+    margin-block-end: -1%;
+}
+
+.post-comment {
+    font-size: 1.5em;
+}
+
+.post-content {
+    width: 90%
+}
+
+.line0 {
+    line-break: 0
+}
+
+.card-block p {
+    margin-inline-end: 0 !important;
+    margin-block-end: 0 !important;
+    margin-block-start: 0 !important;
+    margin-inline-start: 0 !important;
+}
+
+.card-block {
+    border: solid 1px #eeeeee;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 800px) {
+    main {
+        padding: 0 5%
+    }
+    #btn-nav {
+        width: 13em !important;
+    }
+    #banner {
+        padding: 0 5%;
+    }
+    .card {
+        width: 100% !important;
+    }
+    .card p {
+        padding-right: 0 !important
+    }
+    #content article {
+        width: 90vw !important
+    }
+}
