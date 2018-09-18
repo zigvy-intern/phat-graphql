@@ -264,7 +264,10 @@ img {
     .card p {
         padding-right: 0 !important
     }
-    #content {
-        width: 95vw !important
+    #content article {
+        flex: 100%;
+    }
+    #post-content {
+        padding-right: 0;
     }
 }
